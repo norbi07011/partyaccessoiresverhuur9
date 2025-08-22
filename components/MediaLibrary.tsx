@@ -26,7 +26,15 @@ const MediaLibrary: React.FC<MediaLibraryProps> = ({ t }) => {
             return (
                 <figure key={index} className="card">
                     <div className="thumb">
-                        <video muted playsInline preload="metadata" controls src={item.src} className="media-item" />
+                        <video 
+                            muted 
+                            playsInline 
+                            preload="metadata" 
+                            controls 
+                            src={item.src} 
+                            poster={item.poster || `/images/${item.title.replace(/ /g, '_')}.jpg`} 
+                            className="media-item" 
+                        />
                         <span className="badge-lang">{item.lang}</span>
                     </div>
                     <figcaption className="meta">
@@ -51,7 +59,14 @@ const MediaLibrary: React.FC<MediaLibraryProps> = ({ t }) => {
             return (
                 <figure key={index} className="card">
                     <div className="thumb">
-                         <iframe src={item.url} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="w-full h-full border-0"></iframe>
+                         <iframe 
+                            src={item.url} 
+                            title={item.title}
+                            loading="lazy" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowFullScreen 
+                            className="w-full h-full border-0"
+                         ></iframe>
                         <span className="badge-lang">{item.lang}</span>
                     </div>
                     <figcaption className="meta"><div className="title">{item.title}</div></figcaption>

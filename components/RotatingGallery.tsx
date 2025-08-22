@@ -19,7 +19,7 @@ const RotatingGallery: React.FC<RotatingGalleryProps> = ({ t }) => {
                             <span key={index} style={{ '--i': index + 1 } as React.CSSProperties}>
                                 <div className="mascot-card">
                                     <img src={mascot.img} alt={mascot.alt} className="card-bg" loading="lazy" />
-                                    <img src={mascot.characterImg} alt="" className="card-char" loading="lazy" aria-hidden="true" />
+                                    {/* Używamy tylko jednego obrazu, ponieważ characterImg może nie być dostępne */}
                                     <div className="card-info">
                                         <h3 className="card-title">{mascot.name}</h3>
                                         <p className="card-subtitle">{mascot.subtitle}</p>
@@ -118,7 +118,7 @@ const RotatingGallery: React.FC<RotatingGalleryProps> = ({ t }) => {
                 }
 
                 /* --- Card Layers --- */
-                .card-bg, .card-char, .card-info {
+                .card-bg, .card-info {
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -129,19 +129,12 @@ const RotatingGallery: React.FC<RotatingGalleryProps> = ({ t }) => {
                 .card-bg {
                     object-fit: cover;
                     border-radius: 16px;
-                }
-                
-                .card-char {
-                    object-fit: contain;
-                    transform: translateZ(60px);
                     transition: transform 0.5s ease;
-                    /* Drop shadow for depth */
-                    filter: drop-shadow(5px 10px 15px rgba(0,0,0,0.5));
                 }
                 
-                /* Pop the character out on hover */
-                .gallery-box span:hover .card-char {
-                    transform: translateZ(120px) translateY(-10px) scale(1.1);
+                /* Zoom effect on hover */
+                .gallery-box span:hover .card-bg {
+                    transform: scale(1.05);
                 }
 
                 .card-info {
@@ -149,9 +142,16 @@ const RotatingGallery: React.FC<RotatingGalleryProps> = ({ t }) => {
                     flex-direction: column;
                     justify-content: flex-end;
                     padding: 1.5rem;
-                    background: linear-gradient(to top, rgba(0,0,0,0.9) 10%, transparent 60%);
+                    background: linear-gradient(to top, rgba(0,0,0,0.9) 20%, transparent 70%);
                     color: white;
-                    transform: translateZ(20px);
+                    transform: translateZ(30px);
+                    transition: transform 0.5s ease;
+                    z-index: 10;
+                }
+                
+                /* Lift card info on hover for 3D effect */
+                .gallery-box span:hover .card-info {
+                    transform: translateZ(50px);
                 }
                 
                 .card-title {

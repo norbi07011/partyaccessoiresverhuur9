@@ -4,153 +4,157 @@ export const PRODUCTS: Product[] = [
   {
     id:'tent', 
     name:'Opblaasbare feesttent met accessoires', 
-    img:'/assets/partini_tentini.jpg', 
+    img:'/images/Opblaasbare feesttent met accessoires.jpg', 
     priceOld:400, 
     price:275, 
     sale:true, 
     product:'Namiot LED',
     description: 'Zmień swój ogród w epickie centrum imprezy! Nasz namiot LED z oświetleniem, nagłośnieniem i wytwornicą dymu to gwarancja niezapomnianych wrażeń. Idealny na urodziny, rocznice i spotkania z przyjaciómi.',
     gallery: [
-      '/assets/partini_tentini.jpg',
-      'https://picsum.photos/seed/tent-gallery-1/800/600',
-      'https://picsum.photos/seed/tent-gallery-2/800/600',
-      'https://picsum.photos/seed/tent-gallery-3/800/600',
+      '/images/Opblaasbare feesttent met accessoires.jpg',
+      '/images/partini-tentini.jpg.jpg',
+      '/images/jblini-trututini.jpg.jpg',
+      '/images/Zdjęcie WhatsApp 2025-08-22 o 02.47.34_d6675cbc.jpg',
     ]
   },
   {
     id:'cotton', 
     name:'Zelfbediening suikerspinmachine', 
-    img:'/assets/suikerspini_gangusini.jpg', 
+    img:'/images/suikerspini-gangusinii.jpg.jpg', 
     price:100, 
     sale:false, 
     product:'Suikerspin Gangusini',
     description: 'Słodka atrakcja dla małych i dużych! Nasza maszyna do waty cukrowej jest prosta w obsłudze i zawsze wywołuje uśmiech. Dostarczymy wszystko, czego potrzebujesz, by kręcić puszyste chmurki szczęścia.',
     gallery: [
-      '/assets/suikerspini_gangusini.jpg',
-      'https://picsum.photos/seed/cotton-gallery-1/800/600',
-      'https://picsum.photos/seed/cotton-gallery-2/800/600',
+      '/images/suikerspini-gangusinii.jpg.jpg',
+      '/images/foto-bossini-clickolini.jpg.jpg',
+      '/images/partini-tentini.jpg.jpg',
     ]
   },
   {
     id:'popcorn', 
     name:'POPCORNMACHINE', 
-    img:'/assets/popcorini_boefini.jpg', 
+    img:'/images/popcornini-boefini.jpg.jpg', 
     price:50, 
     sale:false, 
     product:'Popcorni Boefini',
     description: 'Zapach świeżego popcornu to zapach dobrej zabawy! Nasz profesjonalny wózek do popcornu nada Twojej imprezie kinowego klimatu i zaspokoi apetyt każdego gościa.',
     gallery: [
-      '/assets/popcorini_boefini.jpg',
-      'https://picsum.photos/seed/popcorn-gallery-1/800/600',
-      'https://picsum.photos/seed/popcorn-gallery-2/800/600',
+      '/images/popcornini-boefini.jpg.jpg',
+      '/images/foto-bossini-clickolini.jpg.jpg',
+      '/images/jblini-trututini.jpg.jpg',
     ]
   },
   {
     id:'foam', 
     name:'Schuimparty-machine', 
-    img:'/assets/champanini_schuimni.jpg', 
+    img:'/images/champanini-schuimni.jpg.jpg', 
     price:150, 
     sale:false, 
     product:'Piana party',
     description: 'Gotowi na piankowe szaleństwo? Nasza wytwornica piany to hit każdej letniej imprezy. Bezpieczna dla dzieci, gwarantuje godziny świetnej zabawy i ochłody.',
     gallery: [
-      '/assets/champanini_schuimni.jpg',
-      'https://picsum.photos/seed/foam-gallery-1/800/600',
-      'https://picsum.photos/seed/foam-gallery-2/800/600',
+      '/images/champanini-schuimni.jpg.jpg',
+      '/images/clownini-blaasinii.jpg.jpg',
+      '/images/krokodilo-glijbaanino.jpg.jpg',
     ]
   },
   {
     id:'photo', 
     name:'Fotoshoot op evenement', 
-    img:'/assets/foto_bossini_clickolini.jpg', 
+    img:'/images/Fotoshoot op evenement.jpg', 
     price:150, 
     sale:false, 
     product:'Fotobudka',
     description: 'Uchwyć najlepsze momenty! Nasza fotobudka z zabawnymi rekwizytami to świetny sposób na integrację gości i stworzenie pamiątki na lata. Zdjęcia drukowane na miejscu!',
     gallery: [
-      '/assets/foto_bossini_clickolini.jpg',
-      'https://picsum.photos/seed/photo-gallery-1/800/600',
-      'https://picsum.photos/seed/photo-gallery-2/800/600',
+      '/images/Fotoshoot op evenement.jpg',
+      '/images/foto-bossini-clickolini.jpg.jpg',
+      '/images/Zdjęcie WhatsApp 2025-08-22 o 02.47.35_8f1b1f4c.jpg',
     ]
   },
   {
     id:'booth360', 
     name:'Fotohokje 360°', 
-    img:'https://picsum.photos/seed/booth360/400/300', 
+    img:'/images/foto-bossini-clickolini.jpg.jpg', 
     price:150, 
     sale:false, 
     product:'360 booth',
     description: 'Wejdź na wyższy poziom imprezowych filmów! Nasza platforma 360° nagrywa spektakularne klipy w zwolnionym tempie, którymi goście mogą od razu dzielić się w social media.',
     gallery: [
-      'https://picsum.photos/seed/booth360/800/600',
-      'https://picsum.photos/seed/booth360-gallery-1/800/600',
-      'https://picsum.photos/seed/booth360-gallery-2/800/600',
+      '/images/foto-bossini-clickolini.jpg.jpg',
+      '/images/jblini-trututini.jpg.jpg',
+      '/images/partini-tentini.jpg.jpg',
     ]
   },
   {
     id:'bar', 
     name:'KLEINE BAR MET BIERFUSTKOELER', 
-    img:'https://picsum.photos/seed/bar/400/300', 
+    img:'/images/champanini-schuimni.jpg.jpg', 
     price:50, 
     sale:false, 
     product:'Bar + Lodówka',
     description: 'Zapewnij swoim gościom idealnie schłodzone napoje! Nasz stylowy bar z chłodziarką do beczek to profesjonalne rozwiązanie, które podniesie rangę każdej imprezy. (Butla CO₂ nie jest wliczona w cenę).',
     gallery: [
-      'https://picsum.photos/seed/bar/800/600',
-      'https://picsum.photos/seed/bar-gallery-1/800/600',
+      '/images/champanini-schuimni.jpg.jpg',
+      '/images/ballonini-decorini.jpg.jpg',
     ]
   },
   {
-    id:'jbl', 
-    name:'JBL Luidspreker + Karaokeset', 
-    img:'/assets/jblini_trututini.jpg', 
-    price:0, 
-    sale:false, 
-    product:'JBL + Karaoke',
-    description: 'Rozkręć imprezę z potężnym dźwiękiem! Głośnik JBL z zestawem do karaoke to wszystko, czego potrzebujesz, by Wasi goście mogli pochwalić się swoimi talentami wokalnymi.',
+    id:'decor', 
+    name:'Dekoracje na zamówienie', 
+    img:'/images/ballonini-decorini.jpg.jpg', 
+    price:100, 
+    sale:true, 
+    priceOld:120,
+    product:'Dekoracje',
+    description: 'Specjalne okazje wymagają wyjątkowych dekoracji! Oferujemy kompleksowe udekorowanie przestrzeni, włącznie z balonami, kwiatami, girlandami i innymi ozdobami dostosowanymi do motywu Twojego wydarzenia.',
     gallery: [
-      '/assets/jblini_trututini.jpg',
-      'https://picsum.photos/seed/jbl-gallery-1/800/600',
+      '/images/ballonini-decorini.jpg.jpg',
+      '/images/don-tentini-patronini.jpg.jpg',
+      '/images/kidsini-rugini.jpg.jpg',
     ]
   },
   {
     id:'castle', 
     name:'Springkussen met glijbaan', 
-    img:'/assets/clownini_blaasini.jpg', 
-    price:150, 
+    img:'/images/Springkussen met glijbaan.jpg', 
+    price:120, 
     sale:false, 
-    product:'Zamek ze zjeżdżalnią',
-    description: 'Królestwo zabawy dla najmłodszych! Nasz kolorowy zamek dmuchany ze zjeżdżalnią to bezpieczne miejsce, gdzie dzieci mogą wyskakać się za wszystkie czasy.',
+    product:'Dmuchaniec',
+    description: 'Wielki dmuchany zamek ze zjeżdżalnią to gwarancja dobrej zabawy dla najmłodszych gości. Bezpieczny, stabilny i kolorowy - idealny element na imprezę dla dzieci.',
     gallery: [
-      '/assets/clownini_blaasini.jpg',
-      'https://picsum.photos/seed/castle-gallery-1/800/600',
-      'https://picsum.photos/seed/castle-gallery-2/800/600',
+      '/images/Springkussen met glijbaan.jpg',
+      '/images/Springkussen met glijbaan (2).jpg',
+      '/images/clownini-blaasinii.jpg.jpg',
     ]
   },
   {
     id:'gator', 
     name:'Opblaasbare krokodil: waterglijbaan', 
-    img:'/assets/krokodilo_glijbaanino.jpg', 
+    img:'/images/Opblaasbare krokodil waterglijbaan.jpg', 
     price:200, 
     sale:false, 
     product:'Krokodilo Glijbaanino',
     description: 'Gigantyczna dawka emocji! Wodna zjeżdżalnia w kształcie krokodyla to idealna ochłoda i atrakcja na upalne dni. Kto odważy się zjechać prosto do paszczy bestii?',
     gallery: [
-      '/assets/krokodilo_glijbaanino.jpg',
-      'https://picsum.photos/seed/gator-gallery-1/800/600',
+      '/images/Opblaasbare krokodil waterglijbaan.jpg',
+      '/images/Opblaasbare krokodil waterglijbaan (2).jpg',
+      '/images/Opblaasbare krokodil waterglijbaan.png',
     ]
   },
   {
     id:'bubble',
     name:'BUBBELMACHINE',
-    img:'https://picsum.photos/seed/bubble/400/300',
+    img:'/images/champanini-schuimni.jpg.jpg',
     price:15,
     sale:false,
     product: 'Wytwornica baniek',
     description: 'Stwórz magiczną atmosferę tysiącami baniek mydlanych! Nasza wytwornica to prosty sposób, by dodać uroku każdej uroczystości, od urodzin dzieci po wesela.',
     gallery: [
-      'https://picsum.photos/seed/bubble/800/600',
-      'https://picsum.photos/seed/bubble-gallery-1/800/600',
+      '/images/champanini-schuimni.jpg.jpg',
+      '/images/clownini-blaasinii.jpg.jpg',
+      '/images/jblini-trututini.jpg.jpg',
     ]
   }
 ];
@@ -161,7 +165,7 @@ export const PACKAGES: Package[] = [
         name: 'Standaardpakket',
         price: 275,
         priceOld: 400,
-        img: '/assets/partini_tentini.jpg',
+        img: '/images/partini-tentini.jpg.jpg',
         popular: false,
         name_pl: 'Standaardpakket',
         name_nl: 'Standaardpakket',
@@ -175,7 +179,7 @@ export const PACKAGES: Package[] = [
         name: 'Uitgebreid Pakket',
         price: 400,
         priceOld: 600,
-        img: '/assets/clownini_blaasini.jpg',
+        img: '/images/clownini-blaasinii.jpg.jpg',
         popular: true,
         name_pl: 'Uitgebreid Pakket',
         name_nl: 'Uitgebreid Pakket',
@@ -187,15 +191,15 @@ export const PACKAGES: Package[] = [
 ];
 
 export const MASCOTS = [
-    { name: 'Don Tentini Patronini', img: '/assets/don_tentini_patronini.jpg', characterImg: '/assets/char/don_tentini_patronini.png', alt: 'Don Tentini Patronini', subtitle: 'Szef • Organizacja' },
-    { name: 'Partini Tentini', img: '/assets/partini_tentini.jpg', characterImg: '/assets/char/partini_tentini.png', alt: 'Partini Tentini — Namiot LED', subtitle: 'Namiot LED • Patrol' },
-    { name: 'Krokodilo Glijbaanino', img: '/assets/krokodilo_glijbaanino.jpg', characterImg: '/assets/char/krokodilo_glijbaanino.png', alt: 'Krokodilo Glijbaanino — Zjeżdżalnia', subtitle: 'Zjeżdżalnia • Woda' },
-    { name: 'JBLini Trututinini', img: '/assets/jblini_trututini.jpg', characterImg: '/assets/char/jblini_trututini.png', alt: 'JBLini Trututinini — Głośnik + Karaoke', subtitle: 'Głośnik • Karaoke' },
-    { name: 'Suikerspin Gangusini', img: '/assets/suikerspini_gangusini.jpg', characterImg: '/assets/char/suikerspini_gangusini.png', alt: 'Suikerspin Gangusini — Wata cukrowa', subtitle: 'Wata cukrowa • Słodycze' },
-    { name: 'Champanini Schuimni', img: '/assets/champanini_schuimni.jpg', characterImg: '/assets/char/champanini_schuimni.png', alt: 'Champanini Schuimni — Piana', subtitle: 'Piana Party • Zabawa' },
-    { name: 'Clownini Blaasini', img: '/assets/clownini_blaasini.jpg', characterImg: '/assets/char/clownini_blaasini.png', alt: 'Clownini Blaasini — Zamek', subtitle: 'Zamek • Skakanie' },
-    { name: 'Popcorini Boefini', img: '/assets/popcorini_boefini.jpg', characterImg: '/assets/char/popcorini_boefini.png', alt: 'Popcorini Boefini — Popcorn', subtitle: 'Popcorn • Przekąski' },
-    { name: 'Foto-Bossini Clickolini', img: '/assets/foto_bossini_clickolini.jpg', characterImg: '/assets/char/foto_bossini_clickolini.png', alt: 'Foto-Bossini Clickolini — Fotobudka', subtitle: 'Fotobudka • Zdjęcia' }
+    { name: 'Don Tentini Patronini', img: '/images/don-tentini-patronini.jpg.jpg', characterImg: '/assets/char/don_tentini_patronini.png', alt: 'Don Tentini Patronini', subtitle: 'Szef • Organizacja' },
+    { name: 'Partini Tentini', img: '/images/partini-tentini.jpg.jpg', characterImg: '/assets/char/partini_tentini.png', alt: 'Partini Tentini — Namiot LED', subtitle: 'Namiot LED • Patrol' },
+    { name: 'Krokodilo Glijbaanino', img: '/images/krokodilo-glijbaanino.jpg.jpg', characterImg: '/assets/char/krokodilo_glijbaanino.png', alt: 'Krokodilo Glijbaanino — Zjeżdżalnia', subtitle: 'Zjeżdżalnia • Woda' },
+    { name: 'JBLini Trututinini', img: '/images/jblini-trututini.jpg.jpg', characterImg: '/assets/char/jblini_trututini.png', alt: 'JBLini Trututinini — Głośnik + Karaoke', subtitle: 'Głośnik • Karaoke' },
+    { name: 'Suikerspin Gangusini', img: '/images/suikerspini-gangusinii.jpg.jpg', characterImg: '/assets/char/suikerspini_gangusini.png', alt: 'Suikerspin Gangusini — Wata cukrowa', subtitle: 'Wata cukrowa • Słodycze' },
+    { name: 'Champanini Schuimni', img: '/images/champanini-schuimni.jpg.jpg', characterImg: '/assets/char/champanini_schuimni.png', alt: 'Champanini Schuimni — Piana', subtitle: 'Piana Party • Zabawa' },
+    { name: 'Clownini Blaasini', img: '/images/clownini-blaasinii.jpg.jpg', characterImg: '/assets/char/clownini_blaasini.png', alt: 'Clownini Blaasini — Zamek', subtitle: 'Zamek • Skakanie' },
+    { name: 'Popcorini Boefini', img: '/images/popcornini-boefini.jpg.jpg', characterImg: '/assets/char/popcorini_boefini.png', alt: 'Popcorini Boefini — Popcorn', subtitle: 'Popcorn • Przekąski' },
+    { name: 'Foto-Bossini Clickolini', img: '/images/foto-bossini-clickolini.jpg.jpg', characterImg: '/assets/char/foto_bossini_clickolini.png', alt: 'Foto-Bossini Clickolini — Fotobudka', subtitle: 'Fotobudka • Zdjęcia' }
 ];
 
 export const PHONE_WA = '+31633387724';
@@ -256,13 +260,25 @@ export const L10N = {
 
 export const MEDIA_DATA: { videos: MediaItem[], photos: MediaItem[], embeds: MediaItem[] } = {
   videos: [
-    { src: 'https://picsum.photos/seed/v1/600/400', title: 'Impreza w namiocie LED', product: 'Namiot LED', lang: 'PL' },
-    { src: 'https://picsum.photos/seed/v2/600/400', title: 'Dzieci na dmuchańcu', product: 'Dmuchany zamek', lang: 'NL' },
+    { 
+      src: '/videos/Impreza w namiocie LED.mp4', 
+      poster: '/images/Opblaasbare feesttent met accessoires.jpg', 
+      title: 'Impreza w namiocie LED', 
+      product: 'Namiot LED', 
+      lang: 'PL' 
+    },
+    { 
+      src: '/videos/Dzieci na dmuchańcu.mp4', 
+      poster: '/images/Springkussen met glijbaan.jpg', 
+      title: 'Dzieci na dmuchańcu', 
+      product: 'Dmuchany zamek', 
+      lang: 'NL' 
+    },
   ],
   photos: [
-    { src: 'https://picsum.photos/seed/p1/600/400', title: 'Uśmiechnięta para w fotobudce', alt: 'Uśmiechnięta para w fotobudce', product: 'Fotobudka', lang: 'PL' },
-    { src: 'https://picsum.photos/seed/p2/600/400', title: 'Wata cukrowa z bliska', alt: 'Wata cukrowa z bliska', product: 'Suikerspin Gangusini', lang: 'NL' },
-    { src: 'https://picsum.photos/seed/p3/600/400', title: 'Platforma 360 w akcji', alt: 'Platforma 360 w akcji', product: '360 booth', lang: 'PL' },
+    { src: '/images/Fotoshoot op evenement.jpg', title: 'Uśmiechnięta para w fotobudce', alt: 'Uśmiechnięta para w fotobudce', product: 'Fotobudka', lang: 'PL' },
+    { src: '/images/Zdjęcie WhatsApp 2025-08-22 o 02.47.35_2f3c747a.jpg', title: 'Wata cukrowa z bliska', alt: 'Wata cukrowa z bliska', product: 'Suikerspin Gangusini', lang: 'NL' },
+    { src: '/images/Zdjęcie WhatsApp 2025-08-22 o 02.47.35_5f507318.jpg', title: 'Platforma 360 w akcji', alt: 'Platforma 360 w akcji', product: '360 booth', lang: 'PL' },
   ],
   embeds: [
     { url: 'https://www.youtube.com/embed/dQw4w9WgXcQ', title: 'Oficjalny aftermovie', product: 'Namiot LED', lang: 'PL' }
