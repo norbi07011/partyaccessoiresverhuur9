@@ -99,8 +99,14 @@ const RotatingGallery: React.FC<RotatingGalleryProps> = ({ t }) => {
                     justify-content: center;
                     align-items: center;
                     min-height: 80vh;
-                    padding: 4rem 0;
+                    padding: 2rem 0;
                     overflow: hidden;
+                }
+
+                @media (min-width: 768px) {
+                    .gallery-section {
+                        padding: 4rem 0;
+                    }
                 }
 
                 /* --- Gallery Controls Container --- */
@@ -110,15 +116,21 @@ const RotatingGallery: React.FC<RotatingGalleryProps> = ({ t }) => {
                     align-items: center;
                     justify-content: center;
                     width: 100%;
-                    padding: 0 20px;
+                    padding: 0 15px;
+                }
+
+                @media (min-width: 768px) {
+                    .gallery-controls {
+                        padding: 0 20px;
+                    }
                 }
                 
                 /* --- Navigation Buttons --- */
                 .gallery-control-btn {
                     position: relative;
                     z-index: 10;
-                    width: 50px;
-                    height: 50px;
+                    width: 45px;
+                    height: 45px;
                     border-radius: 50%;
                     background: rgba(158, 0, 255, 0.2);
                     border: 1px solid rgba(158, 0, 255, 0.5);
@@ -130,6 +142,13 @@ const RotatingGallery: React.FC<RotatingGalleryProps> = ({ t }) => {
                     transition: all 0.3s ease;
                     box-shadow: 0 0 15px rgba(158, 0, 255, 0.3);
                 }
+
+                @media (min-width: 768px) {
+                    .gallery-control-btn {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
                 
                 .gallery-control-btn:hover {
                     background: rgba(158, 0, 255, 0.4);
@@ -138,11 +157,23 @@ const RotatingGallery: React.FC<RotatingGalleryProps> = ({ t }) => {
                 }
                 
                 .gallery-control-btn.left {
-                    margin-right: 20px;
+                    margin-right: 15px;
+                }
+
+                @media (min-width: 768px) {
+                    .gallery-control-btn.left {
+                        margin-right: 20px;
+                    }
                 }
                 
                 .gallery-control-btn.right {
-                    margin-left: 20px;
+                    margin-left: 15px;
+                }
+
+                @media (min-width: 768px) {
+                    .gallery-control-btn.right {
+                        margin-left: 20px;
+                    }
                 }
                 
                 /* --- Reset button --- */
@@ -170,10 +201,11 @@ const RotatingGallery: React.FC<RotatingGalleryProps> = ({ t }) => {
                 /* --- Main rotating container --- */
                 .gallery-box {
                     position: relative;
-                    width: 280px;
-                    height: 400px;
+                    width: 220px;
+                    height: 320px;
                     transform-style: preserve-3d;
                     transition: transform 0.5s ease;
+                    overflow: hidden;
                 }
                 
                 /* Auto rotation class */
@@ -188,8 +220,8 @@ const RotatingGallery: React.FC<RotatingGalleryProps> = ({ t }) => {
 
                 @media (min-width: 768px) {
                     .gallery-box {
-                        width: 320px;
-                        height: 450px;
+                        width: 280px;
+                        height: 380px;
                     }
                 }
 
@@ -207,23 +239,20 @@ const RotatingGallery: React.FC<RotatingGalleryProps> = ({ t }) => {
                     height: 100%;
                     transform-origin: center;
                     transform-style: preserve-3d;
-                    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+                    transform: rotateY(calc(var(--i) * 45deg)) translateZ(180px);
                     transition: transform 0.5s ease-in-out;
                 }
                 
-                @media (max-width: 767px) {
+                @media (min-width: 768px) {
                    .gallery-box span {
-                     transform: rotateY(calc(var(--i) * 45deg)) translateZ(220px);
+                     transform: rotateY(calc(var(--i) * 45deg)) translateZ(240px);
                    }
                 }
                 
-                /* Zoom in the focused card on hover */
-                .gallery-box span:hover {
-                    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px) scale(1.1);
-                }
-                 @media (max-width: 767px) {
+                /* Zoom in the focused card on hover - desktop only */
+                @media (min-width: 768px) {
                    .gallery-box span:hover {
-                     transform: rotateY(calc(var(--i) * 45deg)) translateZ(220px) scale(1.15);
+                     transform: rotateY(calc(var(--i) * 45deg)) translateZ(240px) scale(1.08);
                    }
                 }
 
@@ -242,10 +271,12 @@ const RotatingGallery: React.FC<RotatingGalleryProps> = ({ t }) => {
                     transition: transform 0.5s ease;
                 }
                 
-                /* Tilt the card on hover */
-                .gallery-box span:hover .mascot-card {
-                    transform: rotateY(10deg) rotateX(-5deg);
-                    box-shadow: 0 15px 40px rgba(158, 0, 255, 0.4);
+                /* Tilt the card on hover - desktop only */
+                @media (min-width: 768px) {
+                    .gallery-box span:hover .mascot-card {
+                        transform: rotateY(8deg) rotateX(-3deg);
+                        box-shadow: 0 15px 40px rgba(158, 0, 255, 0.4);
+                    }
                 }
 
                 /* --- Card Layers --- */
@@ -263,16 +294,18 @@ const RotatingGallery: React.FC<RotatingGalleryProps> = ({ t }) => {
                     transition: transform 0.5s ease;
                 }
                 
-                /* Zoom effect on hover */
-                .gallery-box span:hover .card-bg {
-                    transform: scale(1.05);
+                /* Zoom effect on hover - desktop only */
+                @media (min-width: 768px) {
+                    .gallery-box span:hover .card-bg {
+                        transform: scale(1.03);
+                    }
                 }
 
                 .card-info {
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-end;
-                    padding: 1.5rem;
+                    padding: 1rem;
                     background: linear-gradient(to top, rgba(0,0,0,0.95) 30%, rgba(0,0,0,0.7) 60%, transparent 90%);
                     color: white;
                     transform: translateZ(30px);
@@ -280,31 +313,68 @@ const RotatingGallery: React.FC<RotatingGalleryProps> = ({ t }) => {
                     z-index: 10;
                     height: 100%;
                 }
+
+                @media (min-width: 768px) {
+                    .card-info {
+                        padding: 1.5rem;
+                    }
+                }
                 
-                /* Lift card info on hover for 3D effect */
-                .gallery-box span:hover .card-info {
-                    transform: translateZ(50px);
+                /* Lift card info on hover for 3D effect - desktop only */
+                @media (min-width: 768px) {
+                    .gallery-box span:hover .card-info {
+                        transform: translateZ(50px);
+                    }
                 }
                 
                 .card-title {
                     font-family: 'Cinzel', serif;
-                    font-size: 1.4rem;
+                    font-size: 1.1rem;
                     font-weight: 800;
                     text-shadow: 0 2px 5px rgba(0,0,0,0.8);
-                    margin: 0 0 0.5rem 0;
-                    line-height: 1.2;
+                    margin: 0 0 0.25rem 0;
+                    line-height: 1.1;
                     text-align: center;
                     word-break: break-word;
                     hyphens: auto;
+                    max-height: 2.4rem;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+
+                @media (min-width: 768px) {
+                    .card-title {
+                        font-size: 1.3rem;
+                        margin: 0 0 0.4rem 0;
+                        line-height: 1.2;
+                        max-height: 3rem;
+                        -webkit-line-clamp: 2;
+                    }
                 }
                 
                 .card-subtitle {
-                    font-size: 0.9rem;
+                    font-size: 0.75rem;
                     margin: 0;
                     color: rgba(255,255,255,0.9);
                     text-shadow: 0 1px 3px rgba(0,0,0,0.7);
                     text-align: center;
-                    padding-bottom: 0.5rem;
+                    padding-bottom: 0.25rem;
+                    max-height: 2rem;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+
+                @media (min-width: 768px) {
+                    .card-subtitle {
+                        font-size: 0.85rem;
+                        padding-bottom: 0.5rem;
+                        max-height: 2.5rem;
+                        -webkit-line-clamp: 2;
+                    }
                 }
             `}</style>
         </>
