@@ -265,6 +265,13 @@ export const MEDIA_DATA: { videos: MediaItem[], photos: MediaItem[], embeds: Med
       product: 'Dmuchaniec', 
       lang: 'PL' 
     },
+    {
+      src: '/videos/Gang Pluszaków PL.mp4',
+      poster: '/images/partini-tentini.jpg.jpg',
+      title: 'Gang Pluszaków',
+      product: 'Maskotki',
+      lang: 'PL'
+    },
     { 
       src: '/videos/Darmowa impreza sąsiedzka den haag PL.mp4', 
       poster: '/images/partini-tentini.jpg.jpg', 

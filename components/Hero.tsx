@@ -19,6 +19,13 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
         <header id="hero" className="relative py-20 px-0 overflow-hidden">
             <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div className="mb-8 lg:mb-0">
+                    <div className="flex items-center gap-3 mb-4">
+                        <img 
+                            src="/images/LOGO.jpg" 
+                            alt="Party Accessoires Verhuur logo" 
+                            className="h-20 w-auto rounded-md shadow-xl shadow-purple-500/30 border border-purple-500/20" 
+                        />
+                    </div>
                     <h1 
                        className="logo-font text-2xl md:text-3xl text-white leading-snug my-6 max-w-xl"
                     >

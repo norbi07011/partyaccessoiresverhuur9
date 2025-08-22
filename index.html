@@ -45,8 +45,16 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-image: radial-gradient(1000px 600px at -10% -10%, rgba(158, 0, 255, 0.15) 0%, transparent 50%),
-                          radial-gradient(800px 500px at 110% 40%, rgba(0, 229, 255, 0.1) 0%, transparent 55%);
+        background-image: radial-gradient(1000px 600px at -10% -10%, rgba(158, 0, 255, 0.25) 0%, transparent 50%),
+                          radial-gradient(800px 500px at 110% 40%, rgba(0, 229, 255, 0.2) 0%, transparent 55%);
+      }
+      
+      /* Additional gradient for mobile devices */
+      @media (max-width: 767px) {
+        .neon-energy-bg::before {
+          background-image: radial-gradient(800px 600px at 50% 30%, rgba(158, 0, 255, 0.25) 0%, transparent 70%),
+                            radial-gradient(600px 400px at 50% 70%, rgba(0, 229, 255, 0.2) 0%, transparent 70%);
+        }
       }
       .neon-energy-bg::after { /* Animated flowing waves */
         content: '';
@@ -64,6 +72,19 @@
         );
         animation: flow-animation calc(15s / max(var(--flow-speed), 0.01)) linear infinite;
         z-index: 0;
+      }
+      
+      /* Enhanced flow animation for mobile */
+      @media (max-width: 767px) {
+        .neon-energy-bg::after {
+          background: linear-gradient(
+            115deg,
+            transparent 35%,
+            rgba(255, 0, 255, 0.2) 45%,
+            rgba(0, 229, 255, 0.15) 55%,
+            transparent 65%
+          );
+        }
       }
       main {
         position: relative;
@@ -96,6 +117,7 @@
         background-color: var(--c-panel-bg);
         border: 1px solid var(--c-border);
   box-shadow: 0 0 20px rgba(158, 0, 255, var(--neon-alpha-outer)), inset 0 0 10px rgba(158, 0, 255, var(--neon-alpha-inner));
+        -webkit-backdrop-filter: blur(8px);
         backdrop-filter: blur(8px);
         border-radius: 18px;
         transition: transform 0.3s, box-shadow 0.3s;
@@ -188,6 +210,7 @@
         border: 1px solid var(--c-border);
   background-color: rgba(158, 0, 255, var(--neon-alpha-inner));
         color: #e2d4ff;
+        -webkit-backdrop-filter: blur(4px);
         backdrop-filter: blur(4px);
       }
       .btn-ghost:hover, .sticky-btn:hover, .btn-ghost-nav:hover {

@@ -34,7 +34,7 @@ const Header: React.FC<HeaderProps> = ({ t, setLang, onCartClick }) => {
         <header className="sticky top-0 z-30 bg-[rgba(5,2,15,0.7)] backdrop-blur-md border-b border-[rgba(158,0,255,0.3)] shadow-[0_0_20px_rgba(158,0,255,0.2)]">
             <div className="container mx-auto px-4 flex items-center gap-4 py-2.5">
                 <a className="logo-font flex items-center gap-2.5 font-black text-white text-xl" href="#hero">
-                    <img src="/images/LOGO.jpg" alt="Party Accessoires Verhuur logo" className="h-11 rounded-md" />
+                    <img src="/images/LOGO.jpg" alt="Party Accessoires Verhuur logo" className="h-12 rounded-md shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300" />
                     <span className="sr-only">AKCESORIA IMPREZOWE VERHUUR</span>
                 </a>
                 <div className="hidden md:flex items-center gap-2 flex-wrap mx-auto">

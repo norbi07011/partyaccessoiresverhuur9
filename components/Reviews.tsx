@@ -193,6 +193,7 @@ const Reviews: React.FC<ReviewsProps> = ({ t }) => {
                   display: grid;
                   place-items: center;
                   background: rgba(11,15,32,0.85);
+                  -webkit-backdrop-filter: blur(4px);
                   backdrop-filter: blur(4px);
                   border: 1px solid;
                   transition: all 0.2s;
