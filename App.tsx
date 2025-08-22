@@ -19,6 +19,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CartDrawer from './components/CartDrawer';
 import CircularMenu from './components/CircularMenu';
+import FloatingCart from './components/FloatingCart';
 
 const AppContent: React.FC = () => {
     const [lang, setLang] = useState<LanguageCode>('pl');
@@ -71,6 +72,7 @@ const AppContent: React.FC = () => {
             </main>
             <Footer t={t} />
             <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} t={t} />
+            <FloatingCart onCartClick={() => setIsCartOpen(true)} />
             <CircularMenu t={t} />
         </div>
     );

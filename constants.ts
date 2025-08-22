@@ -4,17 +4,23 @@ export const PRODUCTS: Product[] = [
   {
     id:'tent', 
     name:'Opblaasbare feesttent met accessoires', 
-    img:'/images/Opblaasbare feesttent met accessoires.jpg', 
+    img:'/images/IMPREZOWE NAMIOT LED,.jpg', 
     priceOld:400, 
     price:275, 
     sale:true, 
     product:'Namiot LED',
     description: 'Zmień swój ogród w epickie centrum imprezy! Nasz namiot LED z oświetleniem, nagłośnieniem i wytwornicą dymu to gwarancja niezapomnianych wrażeń. Idealny na urodziny, rocznice i spotkania z przyjaciómi.',
     gallery: [
+      '/images/IMPREZOWE NAMIOT LED,.jpg',
       '/images/Opblaasbare feesttent met accessoires.jpg',
+      '/images/Opblaasbare feesttent met accessoires (2).jpg',
+      '/images/Opblaasbare feesttent met accessoires (3).jpg',
+      '/images/Opblaasbare feesttent met accessoires (4).jpg',
+      '/images/Opblaasbare feesttent met accessoires (5).jpg',
+      '/images/Opblaasbare feesttent met accessoires (6).jpg',
+      '/images/Opblaasbare feesttent met accessoires (7).jpg',
       '/images/partini-tentini.jpg.jpg',
       '/images/jblini-trututini.jpg.jpg',
-      '/images/Zdjęcie WhatsApp 2025-08-22 o 02.47.34_d6675cbc.jpg',
     ]
   },
   {
@@ -27,36 +33,32 @@ export const PRODUCTS: Product[] = [
     description: 'Słodka atrakcja dla małych i dużych! Nasza maszyna do waty cukrowej jest prosta w obsłudze i zawsze wywołuje uśmiech. Dostarczymy wszystko, czego potrzebujesz, by kręcić puszyste chmurki szczęścia.',
     gallery: [
       '/images/suikerspini-gangusinii.jpg.jpg',
-      '/images/foto-bossini-clickolini.jpg.jpg',
-      '/images/partini-tentini.jpg.jpg',
     ]
   },
   {
     id:'popcorn', 
     name:'POPCORNMACHINE', 
-    img:'/images/popcornini-boefini.jpg.jpg', 
+    img:'/images/POPCORNMACHINE.jpg', 
     price:50, 
     sale:false, 
     product:'Popcorni Boefini',
     description: 'Zapach świeżego popcornu to zapach dobrej zabawy! Nasz profesjonalny wózek do popcornu nada Twojej imprezie kinowego klimatu i zaspokoi apetyt każdego gościa.',
     gallery: [
+      '/images/POPCORNMACHINE.jpg',
       '/images/popcornini-boefini.jpg.jpg',
-      '/images/foto-bossini-clickolini.jpg.jpg',
-      '/images/jblini-trututini.jpg.jpg',
     ]
   },
   {
     id:'foam', 
     name:'Schuimparty-machine', 
-    img:'/images/champanini-schuimni.jpg.jpg', 
+    img:'/images/Schuimparty-machine.jpg', 
     price:150, 
     sale:false, 
     product:'Piana party',
     description: 'Gotowi na piankowe szaleństwo? Nasza wytwornica piany to hit każdej letniej imprezy. Bezpieczna dla dzieci, gwarantuje godziny świetnej zabawy i ochłody.',
     gallery: [
+      '/images/Schuimparty-machine.jpg',
       '/images/champanini-schuimni.jpg.jpg',
-      '/images/clownini-blaasinii.jpg.jpg',
-      '/images/krokodilo-glijbaanino.jpg.jpg',
     ]
   },
   {
@@ -70,51 +72,33 @@ export const PRODUCTS: Product[] = [
     gallery: [
       '/images/Fotoshoot op evenement.jpg',
       '/images/foto-bossini-clickolini.jpg.jpg',
-      '/images/Zdjęcie WhatsApp 2025-08-22 o 02.47.35_8f1b1f4c.jpg',
     ]
   },
   {
     id:'booth360', 
     name:'Fotohokje 360°', 
-    img:'/images/foto-bossini-clickolini.jpg.jpg', 
+    img:'/images/Fotohokje 360°.png', 
     price:150, 
     sale:false, 
     product:'360 booth',
     description: 'Wejdź na wyższy poziom imprezowych filmów! Nasza platforma 360° nagrywa spektakularne klipy w zwolnionym tempie, którymi goście mogą od razu dzielić się w social media.',
     gallery: [
-      '/images/foto-bossini-clickolini.jpg.jpg',
-      '/images/jblini-trututini.jpg.jpg',
-      '/images/partini-tentini.jpg.jpg',
+      '/images/Fotohokje 360°.png',
     ]
   },
   {
     id:'bar', 
     name:'KLEINE BAR MET BIERFUSTKOELER', 
-    img:'/images/champanini-schuimni.jpg.jpg', 
+    img:'/images/KLEINE BAR MET BIERFUSTKOELER.jpg', 
     price:50, 
     sale:false, 
     product:'Bar + Lodówka',
     description: 'Zapewnij swoim gościom idealnie schłodzone napoje! Nasz stylowy bar z chłodziarką do beczek to profesjonalne rozwiązanie, które podniesie rangę każdej imprezy. (Butla CO₂ nie jest wliczona w cenę).',
     gallery: [
-      '/images/champanini-schuimni.jpg.jpg',
-      '/images/ballonini-decorini.jpg.jpg',
+      '/images/KLEINE BAR MET BIERFUSTKOELER.jpg',
     ]
   },
-  {
-    id:'decor', 
-    name:'Dekoracje na zamówienie', 
-    img:'/images/ballonini-decorini.jpg.jpg', 
-    price:100, 
-    sale:true, 
-    priceOld:120,
-    product:'Dekoracje',
-    description: 'Specjalne okazje wymagają wyjątkowych dekoracji! Oferujemy kompleksowe udekorowanie przestrzeni, włącznie z balonami, kwiatami, girlandami i innymi ozdobami dostosowanymi do motywu Twojego wydarzenia.',
-    gallery: [
-      '/images/ballonini-decorini.jpg.jpg',
-      '/images/don-tentini-patronini.jpg.jpg',
-      '/images/kidsini-rugini.jpg.jpg',
-    ]
-  },
+
   {
     id:'castle', 
     name:'Springkussen met glijbaan', 
@@ -140,21 +124,21 @@ export const PRODUCTS: Product[] = [
     gallery: [
       '/images/Opblaasbare krokodil waterglijbaan.jpg',
       '/images/Opblaasbare krokodil waterglijbaan (2).jpg',
+      '/images/Opblaasbare krokodil waterglijbaan (3).jpg',
       '/images/Opblaasbare krokodil waterglijbaan.png',
+      '/images/krokodilo-glijbaanino.jpg.jpg',
     ]
   },
   {
     id:'bubble',
     name:'BUBBELMACHINE',
-    img:'/images/champanini-schuimni.jpg.jpg',
+    img:'/images/BUBBELMACHINE.jpg',
     price:15,
     sale:false,
     product: 'Wytwornica baniek',
     description: 'Stwórz magiczną atmosferę tysiącami baniek mydlanych! Nasza wytwornica to prosty sposób, by dodać uroku każdej uroczystości, od urodzin dzieci po wesela.',
     gallery: [
-      '/images/champanini-schuimni.jpg.jpg',
-      '/images/clownini-blaasinii.jpg.jpg',
-      '/images/jblini-trututini.jpg.jpg',
+      '/images/BUBBELMACHINE.jpg',
     ]
   }
 ];
@@ -207,7 +191,7 @@ export const VAT_RATE = 0.21;
 
 export const L10N = {
   pl: {
-    "nav.packages":"Pakiety","nav.products":"Produkty","nav.planner":"Planer AI","nav.mascots":"Maskotki","nav.media":"Media","nav.permits":"Zezwolenia","nav.contact":"Kontakt",
+    "nav.packages":"Pakiety","nav.products":"Produkty","nav.planner":"Planer AI","nav.mascots":"Maskotki","nav.media":"Media","nav.permits":"Zezwolenia","nav.contact":"Kontakt","nav.cart":"Koszyk",
     "hero.title":"Najlepsze atrakcje na Twoją imprezę","hero.sub":"WYNAJMIJ NAJLEPSZE ATRAKCJE IMPREZOWE: NAMIOT LED, DMUCHAŃCE, FOTOBUDKA 360°, POPCORN I WATA. OBSŁUGUJEMY WESTLAND / DEN HAAG +25 KM. REZERWACJA W 1 KLIK!","cta.bookNow":"Zarezerwuj już teraz","cta.whatsappNow":"Napisz do mnie na WhatsAppie",
     "why.lead":"Oferujemy nie tylko wynajem; dostarczamy kompletną imprezową obsługę.", "why.fast":"Szybka dostawa","why.fastDesc":"Westland / Haga i okolice. Dostawa + montaż.",
     "why.price":"Najlepsze ceny", "why.priceDesc":"Proste pakiety, zero ukrytych kosztów.", "why.gear":"Niezawodny sprzęt","why.gearDesc":"Regularny serwis i zapas akcesoriów.",
@@ -215,7 +199,7 @@ export const L10N = {
     "why.support":"Wsparcie 24/7","why.supportDesc":"Telefon/WhatsApp podczas wydarzenia.","why.foot":"Wybierz atrakcje i zarezerwuj termin w kilka klików.",
     "packages.title":"Wybierz idealny pakiet", "packages.subtitle":"Każdy pakiet można w pełni dostosować do Twoich potrzeb!", "packages.popular":"POPULARNY", "packages.select":"Wybierz Pakiet", "packages.vat_info":"+ VAT",
     "products.title":"Oferta / Produkty","products.hint":"Kliknij zdjęcie, by zobaczyć galerię. Przewijaj w poziomie na telefonie.",
-    "planner.title": "Planer Imprez AI", "planner.subtitle": "Nie masz pomysłu? Opisz swoje potrzeby, a nasz asystent AI przygotuje gotowy plan imprezy!", "planner.eventType.label": "Rodzaj imprezy", "planner.eventType.birthday": "Urodziny", "planner.eventType.anniversary": "Rocznica", "planner.eventType.kids": "Impreza dla dzieci", "planner.eventType.corporate": "Spotkanie firmowe", "planner.guests.label": "Liczba gości", "planner.budget.label": "Budżet", "planner.vibe.label": "Klimat / Motyw przewodni", "planner.vibe.placeholder": "np. eleganckie przyjęcie, luźny grill, impreza w stylu lat 80.", "planner.button": "✨ Wygeneruj Plan", "planner.loading": "Myślimy...", "planner.error": "Coś poszło nie tak. Spróbuj ponownie później.", "planner.getStarted": "Wypełnij formularz, aby wygenerować plan imprezy.", "planner.results.products": "Rekomendowane produkty", "planner.results.decorations": "Pomysły na dekoracje", "planner.results.activities": "Propozycje aktywności", "planner.results.timeline": "Harmonogram",
+    "planner.title": "Planer Imprez AI", "planner.subtitle": "Nie masz pomysłu? Opisz swoje potrzeby, a nasz asystent AI przygotuje gotowy plan imprezy!", "planner.comingSoon": "Wkrótce dostępne!", "planner.eventType.label": "Rodzaj imprezy", "planner.eventType.birthday": "Urodziny", "planner.eventType.anniversary": "Rocznica", "planner.eventType.kids": "Impreza dla dzieci", "planner.eventType.corporate": "Spotkanie firmowe", "planner.guests.label": "Liczba gości", "planner.budget.label": "Budżet", "planner.vibe.label": "Klimat / Motyw przewodni", "planner.vibe.placeholder": "np. eleganckie przyjęcie, luźny grill, impreza w stylu lat 80.", "planner.button": "✨ Wygeneruj Plan", "planner.loading": "Myślimy...", "planner.error": "Coś poszło nie tak. Spróbuj ponownie później.", "planner.getStarted": "Wypełnij formularz, aby wygenerować plan imprezy.", "planner.results.products": "Rekomendowane produkty", "planner.results.decorations": "Pomysły na dekoracje", "planner.results.activities": "Propozycje aktywności", "planner.results.timeline": "Harmonogram",
     "mascots.title": "Mascotte Crew",
     "media.title": "Media Library", "media.subtitle": "Wideo, zdjęcia i embedowane shorty.",
     "media.tab.videos": "🎬 Wideo", "media.tab.photos": "🖼️ Zdjęcia", "media.tab.embeds": "🔗 Embeds",
@@ -232,7 +216,7 @@ export const L10N = {
     "footer.links.title": "Linki", "footer.contact.title": "Dane", "footer.terms": "Regulamin", "footer.privacy": "Polityka prywatności", "footer.returns": "Zwroty", "footer.disclaimer.title": "Uwaga", "footer.disclaimer.text": "Przy każdym pakiecie wymagana jest kaucja w wysokości 300 €. Zostanie ona w pełni zwrócona po zakończeniu wydarzenia, pod warunkiem zwrotu wszystkich wypożyczonych przedmiotów w dobrym stanie."
   },
   nl: {
-    "nav.packages":"Pakketten","nav.products":"Producten","nav.planner":"AI Event Planner","nav.mascots":"Mascotte Crew","nav.media":"Media","nav.permits":"Vergunningen","nav.contact":"Contact",
+    "nav.packages":"Pakketten","nav.products":"Producten","nav.planner":"AI Event Planner","nav.mascots":"Mascotte Crew","nav.media":"Media","nav.permits":"Vergunningen","nav.contact":"Contact","nav.cart":"Winkelwagen",
     "hero.title":"De beste attracties voor jouw feest","hero.sub":"HUUR DE BESTE FEESTATTRACTIES: LED TENT, SPRINGKUSSENS, PHOTOBOOTH 360°, POPCORN EN SUIKERSPIN. WIJ BEDIENEN WESTLAND / DEN HAAG +25 KM. RESERVEREN IN 1 KLIK!","cta.bookNow":"Reserveer nu","cta.whatsappNow":"Chat met ons op WhatsApp",
     "why.lead":"Wij bieden meer dan alleen verhuur; wij leveren een complete ervaring.","why.fast":"Snelle bezorging","why.fastDesc":"Westland/Den Haag e.o. Levering + opbouw.",
     "why.price":"Beste prijzen","why.priceDesc":"Eerlijke pakketten, geen verborgen kosten.","why.gear":"Betrouwbare apparatuur","why.gearDesc":"Regelmatig onderhoud en reserve-onderdelen.",
@@ -240,7 +224,7 @@ export const L10N = {
     "why.support":"Technische support 24/7","why.supportDesc":"Hulp via telefoon/WhatsApp tijdens het event.","why.foot":"Kies attracties en reserveer in enkele klikken.",
     "packages.title":"Kies het perfecte pakket", "packages.subtitle":"Volledig aanpasbaar naar jouw wensen!", "packages.popular":"POPULAIR", "packages.select":"Selecteer Pakket", "packages.vat_info":"excl. BTW",
     "products.title":"Aanbod / Producten","products.hint":"Klik op de foto voor de galerij. Veeg links/rechts op mobiel.",
-    "planner.title": "AI Event Planner", "planner.subtitle": "Geen idee? Beschrijf je wensen en onze AI-assistent stelt een compleet evenementenplan op!", "planner.eventType.label": "Soort evenement", "planner.eventType.birthday": "Verjaardag", "planner.eventType.anniversary": "Jubileum", "planner.eventType.kids": "Kinderfeestje", "planner.eventType.corporate": "Bedrijfsevenement", "planner.guests.label": "Aantal gasten", "planner.budget.label": "Budget", "planner.vibe.label": "Sfeer / Thema", "planner.vibe.placeholder": "bijv. elegant feest, relaxte barbecue, jaren 80-feest", "planner.button": "✨ Genereer Plan", "planner.loading": "Aan het denken...", "planner.error": "Er is iets misgegaan. Probeer het later opnieuw.", "planner.getStarted": "Vul het formulier in om een evenementenplan te genereren.", "planner.results.products": "Aanbevolen producten", "planner.results.decorations": "Decoratie-ideeën", "planner.results.activities": "Activiteitensuggesties", "planner.results.timeline": "Tijdschema",
+    "planner.title": "AI Event Planner", "planner.subtitle": "Geen idee? Beschrijf je wensen en onze AI-assistent stelt een compleet evenementenplan op!", "planner.comingSoon": "Binnenkort beschikbaar!", "planner.eventType.label": "Soort evenement", "planner.eventType.birthday": "Verjaardag", "planner.eventType.anniversary": "Jubileum", "planner.eventType.kids": "Kinderfeestje", "planner.eventType.corporate": "Bedrijfsevenement", "planner.guests.label": "Aantal gasten", "planner.budget.label": "Budget", "planner.vibe.label": "Sfeer / Thema", "planner.vibe.placeholder": "bijv. elegant feest, relaxte barbecue, jaren 80-feest", "planner.button": "✨ Genereer Plan", "planner.loading": "Aan het denken...", "planner.error": "Er is iets misgegaan. Probeer het later opnieuw.", "planner.getStarted": "Vul het formulier in om een evenementenplan te genereren.", "planner.results.products": "Aanbevolen producten", "planner.results.decorations": "Decoratie-ideeën", "planner.results.activities": "Activiteitensuggesties", "planner.results.timeline": "Tijdschema",
     "mascots.title": "Mascotte Crew",
     "media.title": "Media Library", "media.subtitle": "Video's, foto's en embedded shorts.",
     "media.tab.videos": "🎬 Video's", "media.tab.photos": "🖼️ Foto's", "media.tab.embeds": "🔗 Embeds",
@@ -261,17 +245,59 @@ export const L10N = {
 export const MEDIA_DATA: { videos: MediaItem[], photos: MediaItem[], embeds: MediaItem[] } = {
   videos: [
     { 
-      src: '/videos/Impreza w namiocie LED.mp4', 
+      src: '/videos/Impreza w namiocie LED    PL .NL.mp4', 
       poster: '/images/Opblaasbare feesttent met accessoires.jpg', 
       title: 'Impreza w namiocie LED', 
       product: 'Namiot LED', 
       lang: 'PL' 
     },
     { 
-      src: '/videos/Dzieci na dmuchańcu.mp4', 
+      src: '/videos/Impreza w namiocie LED    PL .NL.mp4', 
+      poster: '/images/Opblaasbare feesttent met accessoires.jpg', 
+      title: 'Feest in LED-tent', 
+      product: 'LED Tent', 
+      lang: 'NL' 
+    },
+    { 
+      src: '/videos/Dzieci na dmuchańcu  PL.mp4', 
       poster: '/images/Springkussen met glijbaan.jpg', 
       title: 'Dzieci na dmuchańcu', 
-      product: 'Dmuchany zamek', 
+      product: 'Dmuchaniec', 
+      lang: 'PL' 
+    },
+    { 
+      src: '/videos/Darmowa impreza sąsiedzka den haag PL.mp4', 
+      poster: '/images/partini-tentini.jpg.jpg', 
+      title: 'Darmowa impreza sąsiedzka w Den Haag', 
+      product: 'Pakiet rozszerzony', 
+      lang: 'PL' 
+    },
+    { 
+      src: '/videos/Buurtfeest NL.mp4', 
+      poster: '/images/partini-tentini.jpg.jpg', 
+      title: 'Buurtfeest', 
+      product: 'Uitgebreid Pakket', 
+      lang: 'NL' 
+    },
+    { 
+      src: '/videos/Suikerspinmachine. Binnenkort verkrijgbaar.  NL.mp4', 
+      poster: '/images/suikerspini-gangusinii.jpg.jpg', 
+      title: 'Suikerspinmachine. Binnenkort verkrijgbaar.', 
+      product: 'Suikerspin Gangusini', 
+      lang: 'NL' 
+    },
+    { 
+      src: '/videos/Reklama firmowa PL .NL.mp4', 
+      poster: '/images/IMPREZOWE NAMIOT LED,.jpg', 
+      title: 'Reklama firmowa', 
+      product: 'Wszystkie atrakcje', 
+      lang: 'PL' 
+    },
+    { 
+      src: '/videos/Reklama firmowa PL .NL.mp4', 
+      poster: '/images/IMPREZOWE NAMIOT LED,.jpg', 
+      title: 'Bedrijfsreclame', 
+      product: 'Alle attracties', 
       lang: 'NL' 
     },
   ],

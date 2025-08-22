@@ -19,10 +19,17 @@ const RotatingGallery: React.FC<RotatingGalleryProps> = ({ t }) => {
                             <span key={index} style={{ '--i': index + 1 } as React.CSSProperties}>
                                 <div className="mascot-card">
                                     <img src={mascot.img} alt={mascot.alt} className="card-bg" loading="lazy" />
-                                    {/* Używamy tylko jednego obrazu, ponieważ characterImg może nie być dostępne */}
                                     <div className="card-info">
-                                        <h3 className="card-title">{mascot.name}</h3>
-                                        <p className="card-subtitle">{mascot.subtitle}</p>
+                                        <div className="flex-1"></div>
+                                        <div>
+                                            <h3 className="card-title">{mascot.name.split(' ').map((word, i) => (
+                                                <React.Fragment key={i}>
+                                                    {word}
+                                                    {i < mascot.name.split(' ').length - 1 && <br />}
+                                                </React.Fragment>
+                                            ))}</h3>
+                                            <p className="card-subtitle">{mascot.subtitle}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </span>
@@ -44,8 +51,8 @@ const RotatingGallery: React.FC<RotatingGalleryProps> = ({ t }) => {
                 /* --- Main rotating container --- */
                 .gallery-box {
                     position: relative;
-                    width: 250px;
-                    height: 350px;
+                    width: 280px;
+                    height: 400px;
                     transform-style: preserve-3d;
                     animation: animate-rotation 30s linear infinite;
                 }
@@ -57,8 +64,8 @@ const RotatingGallery: React.FC<RotatingGalleryProps> = ({ t }) => {
 
                 @media (min-width: 768px) {
                     .gallery-box {
-                        width: 300px;
-                        height: 420px;
+                        width: 320px;
+                        height: 450px;
                     }
                 }
 
@@ -142,11 +149,12 @@ const RotatingGallery: React.FC<RotatingGalleryProps> = ({ t }) => {
                     flex-direction: column;
                     justify-content: flex-end;
                     padding: 1.5rem;
-                    background: linear-gradient(to top, rgba(0,0,0,0.9) 20%, transparent 70%);
+                    background: linear-gradient(to top, rgba(0,0,0,0.95) 30%, rgba(0,0,0,0.7) 60%, transparent 90%);
                     color: white;
                     transform: translateZ(30px);
                     transition: transform 0.5s ease;
                     z-index: 10;
+                    height: 100%;
                 }
                 
                 /* Lift card info on hover for 3D effect */
@@ -156,17 +164,23 @@ const RotatingGallery: React.FC<RotatingGalleryProps> = ({ t }) => {
                 
                 .card-title {
                     font-family: 'Cinzel', serif;
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
                     font-weight: 800;
                     text-shadow: 0 2px 5px rgba(0,0,0,0.8);
-                    margin: 0;
+                    margin: 0 0 0.5rem 0;
+                    line-height: 1.2;
+                    text-align: center;
+                    word-break: break-word;
+                    hyphens: auto;
                 }
                 
                 .card-subtitle {
                     font-size: 0.9rem;
                     margin: 0;
-                    color: rgba(255,255,255,0.8);
+                    color: rgba(255,255,255,0.9);
                     text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+                    text-align: center;
+                    padding-bottom: 0.5rem;
                 }
             `}</style>
         </>

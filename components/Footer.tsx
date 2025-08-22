@@ -47,7 +47,7 @@ const Footer: React.FC<FooterProps> = ({ t }) => {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                             <div className="lg:col-span-2">
                                 <div className="logo-font flex items-center gap-2.5 font-black text-white text-xl mb-4">
-                                    <img src="/assets/party-accessoires-verhuur-logo.jpg" alt="Party Accessoires Verhuur logo" className="h-9 rounded-md" />
+                                    <img src="/images/LOGO.jpg" alt="Party Accessoires Verhuur logo" className="h-9 rounded-md" />
                                     PARTY ACCESSOIRES VERHUUR
                                 </div>
                                 <p className="text-gray-400 max-w-sm mb-4">

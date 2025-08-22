@@ -61,7 +61,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
                     </div>
                 </div>
                 <div className="relative h-[420px] neon-panel p-2">
-                    <img src="/assets/partini_tentini.jpg" alt="Namiot imprezowy LED" className="w-full h-full object-cover rounded-lg" />
+                    <img src="/images/IMPREZOWE NAMIOT LED,.jpg" alt="Namiot imprezowy LED" className="w-full h-full object-cover rounded-lg" />
                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent rounded-lg pointer-events-none"></div>
                     <h2 className="absolute bottom-4 left-4 text-white text-xl logo-font pointer-events-none">Namiot imprezowy LED</h2>
                 </div>
