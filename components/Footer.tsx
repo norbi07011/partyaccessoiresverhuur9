@@ -84,7 +84,7 @@ const Footer: React.FC<FooterProps> = ({ t }) => {
                                 <ul className="space-y-2 text-gray-300">
                                     <li>Tel: <a href="tel:+31642512086" className="hover:text-cyan-400 transition-colors">+31 642512086</a></li>
                                     <li>Tel: <a href="tel:+31633387724" className="hover:text-cyan-400 transition-colors">+31 6 33387724</a></li>
-                                    <li>Email: <a href="mailto:partyaccessoires79@gmail.com" className="hover:text-cyan-400 transition-colors break-all">partyaccessoires79@gmail.com</a></li>
+                                    <li>Email: <a href="mailto:rvicenorbs@gmail.com" className="hover:text-cyan-400 transition-colors break-all">rvicenorbs@gmail.com</a></li>
                                      <li>Web: <a href="https://partyaccessoiresverhuur.com/" target="_blank" rel="noopener" className="hover:text-cyan-400 transition-colors">partyaccessoiresverhuur.com</a></li>
                                 </ul>
                             </div>
